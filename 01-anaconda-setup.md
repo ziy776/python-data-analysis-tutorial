@@ -115,7 +115,7 @@ quit()
 
 
 
-### Deactivate the Environment//
+### Deactivate the Environment
 
 To exit the current environment:
 
