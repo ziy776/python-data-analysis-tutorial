@@ -174,6 +174,7 @@ df.describe()
 
 ```python
 # Select value at row label 2 and column 'column_name'
+# Using loc works here because the index (row labels) are integers
 df.loc[2, 'column_name']
 
 # Select all rows and specific columns
@@ -419,6 +420,11 @@ setB = set(listB)
 # Difference: elements in listA but not in listB
 diff = setA - setB
 print("Difference:", diff)  # Output: {1, 2, 5}
+
+# Elements in setA or setB but not in both (symmetric difference)
+diff = setA.symmetric_difference(setB)
+# Or use diff = setA ^ setB
+print("Symmetric difference:", diff)
 
 # Intersection: elements common to both lists
 inter = setA & setB
